@@ -1,0 +1,63 @@
+
+ion-toolbar{
+    --background:var(--ion-color-bread);
+}
+
+ion-content{
+    --background:var(--ion-color-content);
+}
+
+ion-content >h2{
+    text-align: center;
+    margin-top: 3vh;
+    font-weight: 800;
+    font-style: italic; 
+}
+
+ion-row{
+    margin-left:1.5vh;
+    margin-right: 1.5vh;
+}
+
+ion-input{
+    border-bottom: 1.5px solid var(--ion-color-content) ;
+    font-size: 1.5rem;
+}
+
+div{
+    margin-top: 13vh;
+    text-align: center;
+}
+
+form{
+    background-color: white;
+    margin:2vh;
+}
+
+ion-col h2{
+    color:var(--ion-color-bread);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+ion-button{
+    float:right;
+    margin-right: 2vh;
+    --background:var(--ion-color-choux);
+    width:5rem;
+    // font-size:4rem;
+}
+ion-icon{
+    font-size:2.2rem;
+}
+
+span{
+    color:var(--ion-color-bread);
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.peach h2{
+   color:var(--ion-color-choux)
+}

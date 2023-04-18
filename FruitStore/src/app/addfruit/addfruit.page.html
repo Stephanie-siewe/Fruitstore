@@ -1,0 +1,132 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['tabs/tab2']"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add fruit</ion-title>
+     <ion-buttons slot="end">
+        <ion-button (click)="cancel()">Cancel</ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <h2> Fill in the fields</h2>
+
+  </div>
+
+  <div class="form">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h2>Genus</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input [(ngModel)]="genus"></ion-input>
+         </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h2>Name</h2>
+        </ion-col>
+      </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-input  [(ngModel)]="name"></ion-input>
+          </ion-col>
+  
+        </ion-row>
+        
+      <ion-row>
+        <ion-col>
+          <h2>Family</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input  [(ngModel)]="family"></ion-input>
+        </ion-col>
+      </ion-row>
+        
+      <ion-row>
+        <ion-col>
+          <h2>Order</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input  [(ngModel)]="order"></ion-input>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <h2>Carbohydrates</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input type="number" [(ngModel)]="carbohydrates"></ion-input>
+        </ion-col>
+      </ion-row>
+      
+
+      <ion-row>
+        <ion-col >
+          <h2>fat</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input type="number" [(ngModel)]="fat"></ion-input>
+        </ion-col>
+      </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <h2>sugar</h2>
+          </ion-col>
+        </ion-row>
+       <ion-row>
+        <ion-col>
+          <ion-input type="number" [(ngModel)]="sugar"></ion-input>
+        </ion-col>
+       </ion-row>
+       
+    
+
+      <ion-row>
+        <ion-col>
+          <h2>calories</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col >
+          <ion-input type="number" [(ngModel)]="calories"></ion-input>
+        </ion-col>
+      </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <h2>protein</h2>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-input type="number" [(ngModel)]="protein"></ion-input>
+          </ion-col>
+        </ion-row>
+
+    </ion-grid>
+        
+   
+  </div>
+  <ion-button (click)="save()" size="large" expand='block' fill="solid" shape="round"> Save</ion-button>
+
+ 
+</ion-content>

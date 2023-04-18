@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+    <div class="toolbar">
+      <img src="assets/images/3 Playful Snack Ideas For Kids _ The Fresh Times.jpg">
+    <ion-title>
+      Fruitstore
+    </ion-title>
+    <!-- <ion-button slot="end"><ion-icon name="nutrition-outline"></ion-icon></ion-button> -->
+    <ion-icon slot="end" (click)='peach()' name="nutrition-outline"></ion-icon>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <img src="assets/images/Farmers market-amico (2).svg" alt="">
+  <div>
+    <h2> Welcome to <span>Fruitstore</span></h2>
+  <h4>your happiness, our joy</h4>
+
+  </div>
+
+  <div class="peach ion-justify-content-center">
+    <ion-avatar>
+      <img src="assets/images/Food puns illustrations.png">
+    </ion-avatar>
+    <h2> Peachy Club</h2>
+  </div>
+
+  <div>
+    <p>
+      Donate to our local producers and join<br><span> the peachy club</span>
+    </p>
+    <div class="button">
+      <ion-button slot="end" (click)="peach()">
+        <ion-icon  name="send-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+  
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+</ion-content>

@@ -1,0 +1,68 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+    <div class="toolbar">
+      <img src="assets/images/3 Playful Snack Ideas For Kids _ The Fresh Times.jpg">
+      
+      <ion-title>
+      Fruitstore
+    </ion-title>
+    <!-- <ion-button slot="end"><ion-icon name="nutrition-outline"></ion-icon></ion-button> -->
+    <!-- <ion-icon slot="end" (click)='peach()' name="nutrition-outline"></ion-icon> -->
+  </div>
+  <ion-searchbar show-clear-button="always" clear-icon="trash-bin" value="" mode="ios" (ionChange)="handleChange($event)" [debounce]="250"></ion-searchbar>
+  
+  <!-- <ion-searchbar [(ngModel)]="searchTerm"  -->
+  <!-- placeholder="blabla "></ion-searchbar> -->
+  
+  </ion-toolbar>
+  <div class="nav ">
+    <ion-button fill="clear" (click)="online()">Online</ion-button>
+    <ion-button fill="clear">|</ion-button>
+    <ion-button fill="clear" (click)="offline()">Yours Fruits</ion-button>
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+
+    
+  <ion-list [inset]="true" *ngIf="choice == 1">
+    <ion-item *ngFor="let i of results; index as p" >
+      <ion-avatar>
+        <div><h3>{{p}}</h3></div>
+      </ion-avatar>
+      <ion-label (click)="detail(i)"> {{i.name}}</ion-label>
+      <ion-icon name="eye-outline"></ion-icon>
+    </ion-item>
+  
+  </ion-list>
+  <ion-button class='off' *ngIf="choice==2" slot='fixed'  (click)="openModal()"><ion-icon name="add-outline"></ion-icon>Add Fruit</ion-button>
+  
+  <div  class="u--mb-5" *ngIf="choice == 2">
+    <!-- <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+      <ion-refresher-content>
+        
+      </ion-refresher-content>
+    </ion-refresher> -->
+    <ion-list [inset]="true" id="">
+    <ion-item *ngFor="let i of results ; index as p" >
+      <ion-avatar>
+        <div><h3>{{p}}</h3></div>
+      </ion-avatar>
+      <ion-label (click)="detail(i)"> {{i.name}}</ion-label>
+      <ion-icon name="eye-outline"></ion-icon>
+    </ion-item>
+    </ion-list>
+  
+  </div>
+ 
+  <div class='quest' *ngIf="choice == undefined">
+
+    <img src="assets/images/Questions-pana.svg" alt="">
+    <h1> Choose an option on a navbar</h1>
+
+
+  </div>
+
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
+</ion-content>

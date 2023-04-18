@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>peachy club</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <h2 *ngIf="paid == false"> Please add yours informations</h2>
+
+<form action="" *ngIf="paid == false">
+ 
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <h2>Card Number :</h2>
+      </ion-col>
+      <ion-col>
+        <ion-input type="number"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <h2>Name :</h2>
+      </ion-col>
+      <ion-col>
+        <ion-input></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <h2>Expiration :</h2>
+      </ion-col>
+      <ion-col>
+        <ion-input></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <h2>Cvv :</h2>
+      </ion-col>
+      <ion-col>
+        <ion-input  type="number"></ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+ 
+</form>
+<ion-button *ngIf="paid == false" (click)="payment()"><ion-icon name="cash-outline"></ion-icon></ion-button>
+
+<div *ngIf="paid == true" class="peach">
+  <h2> This Fonctionnality coming</h2>
+  <h2> But You are a <span>Good</span> People</h2>
+  <img src="assets/images/You_ve_Got_A_Peach_Of_My_Heart__by_ttlove-removebg-preview.png">
+
+
+
+</div>
+
+</ion-content>

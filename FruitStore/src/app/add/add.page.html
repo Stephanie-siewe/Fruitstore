@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>FruitStore</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+<div>
+ <h2>{{fruit.name}}</h2>
+</div>
+
+<div class="img">
+  <img src="assets/images/dance party.gif" alt="">
+</div>
+
+<!-- <ion-button (click)="delfruit(fruit.id)"><ion-icon name="trash-outline"></ion-icon></ion-button> -->
+  
+ <div>
+<ion-grid>
+    <ion-row class="tete">
+      <ion-col size="4">
+        <h2>genus</h2>
+      </ion-col>
+      <ion-col size="4">
+        <h2>family</h2>
+      </ion-col>
+      <ion-col size="4">
+        <h2>order</h2>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="4">
+        <h2>{{fruit.genus}}</h2>
+      </ion-col>
+      <ion-col size="4">
+        <h2>{{fruit.family}}</h2>
+      </ion-col>
+      <ion-col size="4">
+        <h2>{{fruit.order}}</h2>
+      </ion-col>
+    </ion-row>
+    
+    </ion-grid>
+    
+    <div>
+    <ion-icon name="restaurant-outline"></ion-icon>
+    <h2>Nutritions</h2>
+    </div>
+     <h2><span>carbohydrates: {{fruit.nutritions.carbohydrates}}</span></h2> 
+    <ion-grid>
+      <ion-row class="tete">
+        <ion-col size="3">
+          <h2>protein</h2>
+        </ion-col>
+        <ion-col size="3">
+          <h2>fat</h2>
+        </ion-col>
+        <ion-col size="3">
+          <h2>calories</h2>
+        </ion-col>
+        <ion-col size="3">
+          <h2>sugar</h2>
+        </ion-col>
+      </ion-row>
+    
+      <ion-row>
+        <ion-col size="3">
+          <h2>{{fruit.nutritions.protein}}</h2>
+        </ion-col>
+        <ion-col size="3">
+          <h2>{{fruit.nutritions.fat}}</h2>
+        </ion-col>
+        <ion-col size="3">
+          <h2>{{fruit.nutritions.calories}}</h2>
+        </ion-col>
+        <ion-col size="3">
+          <h2>{{fruit.nutritions.sugar}}</h2>
+        </ion-col>
+      </ion-row>
+    
+    </ion-grid>
+    
+    
+ </div>
+
+</ion-content>
